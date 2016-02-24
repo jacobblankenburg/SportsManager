@@ -8,26 +8,28 @@ namespace SportsManager
 {
     public class LineUp
     {
+        UserControls usercontrols = new UserControls();
+
         List<string> GameLineUp = new List<string>();
 
         public void ManagerSelectsPlayer()
         {
-            Console.WriteLine("Choose 1 for adding players to the lineup or 2 to remove players from lineup. 3 to exit");
-            int? ManagerMove = null;
-            while (true)
+            Console.WriteLine("Choose 1 for adding players to the lineup or 2 to remove players from lineup. 3 to exit and return to home page");
+            int ManagerMove = 0;
+
+            switch (ManagerMove)
             {
-                switch (ManagerMove)
-                {
-                    case 1:
-                        Console.WriteLine("Add:");
-                        AddPlayers();
-                        break;
-                    case 2:
-                        Console.WriteLine("Remove:");
-                        break;
-                    case 3:
-                        break;
-                }
+                case 1:
+                    Console.WriteLine("Add:");
+                    AddPlayers();
+                    break;
+                case 2:
+                    Console.WriteLine("Remove:");
+                    RemovePlayers();
+                    break;
+                
+                //case 3:
+                //    return ManagerMove();
             }
         }
         public void AddPlayers()
