@@ -8,17 +8,33 @@ namespace SportsManager
 {
     public class Player
     {
-        protected string Name;
-        protected int Number;
-        protected string ShotDirection;
-        protected string PlayerPosition;
-        protected bool IsHealthy;
-        protected int Rating;
+        Random rand = new Random();
+
+        public string Name { get; set; }
+        public int Number { get; set; }
+        public string ShotDirection { get; set; }
+        public string PlayerPosition { get; set; }
+        public int Rating { get; set; }
 
 
-        public virtual void PlayerAction()
+        public Player(string name, int number, string shotdirection, string playerposition, int rating)
         {
+            this.Name = name;
+            this.Number = number;
+            this.ShotDirection = shotdirection;
+            this.PlayerPosition = playerposition;
+            this.Rating = GivePlayerRandomRating();
 
         }
+        public int GivePlayerRandomRating()
+        {
+            Rating = rand.Next(85, 99);
+            return Rating;
+
+        }
+        public override string ToString()
+        {
+            return (Name + " has a number of : " + Number + ". shoots from the : " + ShotDirection + " side. " + Name + " is a : " + PlayerPosition + " and has a rating of " + Rating);
+        } 
     }
 }

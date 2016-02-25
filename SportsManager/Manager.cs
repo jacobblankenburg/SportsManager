@@ -9,46 +9,61 @@ namespace SportsManager
 {
     public class Manager
     {
-        Random random = new Random();
-        public void CustomPlaySelect()
+        UserControls usercontrols = new UserControls();
+        FileReader fr = new FileReader();
+
+        public void CallPlay()
         {
-            Console.WriteLine("Would you like to use a random play or a custom play?\n");
-            Console.WriteLine("To use a custom play please go to the CustomPlay.txt and enter the play there\n");
-            string ManagerSelect = Console.ReadLine();
+            Console.WriteLine("------------To use a custom play please go to the CustomPlay.txt and enter the play there------------\n");
 
-            switch (ManagerSelect)
+            Console.WriteLine("1 = Protect Net\n 2 = Back Check\n 3 = Charge the net\n 4 = Counter Attack\n 5 = Call CustomPlay\n 6 = Call TimeOut\n 7 = End Program\n 8 = Menu");
+            do
             {
-                case "random play":
-                case "random":
-                    RandomPlay();
-                    break;
-                case "custom play":
-                case "custom":
-                    ReadCustomPlay();
-                    break;
-            }
+                switch (Console.ReadKey().KeyChar.ToString())
+                {
 
-        }
-        public void RandomPlay()
-        {
-            var number = random.Next(1, 4);
+                    case "1":
+                        Console.WriteLine(" Team is now protecting your net");
+                        continue;
 
-            if (number == 1)
-            {
-                Console.WriteLine("Overload the net");
-            }
-            if (number == 2)
-            {
-                Console.WriteLine("Crash the net");
-            }
-            if (number == 3)
-            {
-                Console.WriteLine("BackCheck");
-            }
-            if (number == 4)
-            {
-                Console.WriteLine("protect the net");
-            }
+                    case "2":
+                        Console.WriteLine(" Team is now back checking");
+                        continue;
+
+                    case "3":
+                        Console.WriteLine(" Team is now charging the net");
+                        continue;
+
+                    case "4":
+                        Console.WriteLine(" Team is Counter attacking oppenent");
+                        continue;
+
+                    case "5":
+                        fr.ReadFromFile("../../CustomPlay.txt");
+                        continue;
+
+                    case "6":
+                        Console.WriteLine(" User called a timeout");
+                        continue;
+
+                    case "7":
+                        break;
+
+                    case "8":
+                        Console.WriteLine(" Menu:   ");
+                        usercontrols.GetUserControl();
+                        return;
+
+                    default:
+                        Console.WriteLine(" Not valid user input");
+                        continue;
+                }
+
+                break;
+
+            } while (true);
+
+            Console.WriteLine("Exited");
         }
         public void ReadCustomPlay()
         {
@@ -58,6 +73,5 @@ namespace SportsManager
             file.Close();
             Console.ReadLine();
         }
-
     }
 }

@@ -10,26 +10,40 @@ namespace SportsManager
     {
         public void GetUserControl()
         {
-            LineUp lineup = new LineUp();
-            Roster roster = new Roster();
+            MakeRoster makeroster = new MakeRoster();
+            ViewRoster viewroster = new ViewRoster();
             Schedule schedule = new Schedule();
+            ViewSchedules viewschedule = new ViewSchedules();
+            LineUp lineup = new LineUp();
             Manager manager = new Manager();
-            
-            Console.WriteLine("View Roster, Schedule, Line Up, Manager Moves, Team Stats\n");
+
+
+
+            Console.WriteLine("Make Roster, View Roster, Edit Schedule, View Schedule, Line Up, Manager Moves, Team Stats, End\n");
             string Userselect = Console.ReadLine();
 
             switch (Userselect)
             {
+                case "make roster":
+                case "Make Roster":
+                    makeroster.MakePlayerRoster();
+                    break;
+
                 case "view roster":
                 case "View Roster":
                     Console.WriteLine("Roster:\n");
-                    roster.displayRoster();
+                    viewroster.ViewPlayerRoster();
                     break;
 
-                case "schedule":
-                case "Schedule":
-                    Console.WriteLine("Schedule:\n");
+                case "edit schedule":
+                case "Edit Schedule":
                     schedule.ScheduleforTeam();
+                    break;
+
+                case "view schedule":
+                case "View Schedule":
+                    Console.WriteLine("Schedule:\n");
+                    viewschedule.ScheduleSelect();
                     break;
 
                 case "line up":
@@ -41,14 +55,19 @@ namespace SportsManager
                 case "Manager Moves":
                 case "manager moves":
                     Console.WriteLine("Manager moves:\n");
-                    manager.CustomPlaySelect();
+                    manager.CallPlay();
                     break;
 
                 case "team stats":
                 case "Team Stats":
                     Console.WriteLine("Team Stats:\n");
                     break;
-                
+
+                case "end":
+                case "End":
+                    Console.WriteLine("---------------------------------Thank you for using TeamManager 1.0---------------------------------------------");
+                    break;
+
             }
         }
     }

@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace SportsManager
 {
-    public class Goalie : Player
+    public class Goalie 
     {
-        public Goalie(string name, int number, string shotDirect, string position, bool healthy, int rating)
-        {
-            this.Name = name;
-            this.Number = number;
-            this.ShotDirection = shotDirect;
-            this.PlayerPosition = position;
-            this.IsHealthy = healthy;
-            this.Rating = rating;
-        }
+        //public Goalie(string name, int number, string shotDirect, string position, bool healthy, int rating)
+        //{
+        //    this.Name = name;
+        //    this.Number = number;
+        //    this.ShotDirection = shotDirect;
+        //    this.PlayerPosition = position;
+        //    this.IsHealthy = healthy;
+        //    this.Rating = rating;
+        //}
 
     }
 }
