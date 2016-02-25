@@ -16,6 +16,7 @@ namespace SportsManager
             ViewSchedules viewschedule = new ViewSchedules();
             LineUp lineup = new LineUp();
             Manager manager = new Manager();
+            TeamStats teamstats = new TeamStats();
 
 
 
@@ -61,6 +62,7 @@ namespace SportsManager
                 case "team stats":
                 case "Team Stats":
                     Console.WriteLine("Team Stats:\n");
+                    teamstats.ViewStats();
                     break;
 
                 case "end":
