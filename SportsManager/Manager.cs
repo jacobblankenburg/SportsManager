@@ -16,7 +16,7 @@ namespace SportsManager
         {
             Console.WriteLine("------------To use a custom play please go to the CustomPlay.txt and enter the play there------------\n");
 
-            Console.WriteLine("1 = Protect Net\n 2 = Back Check\n 3 = Charge the net\n 4 = Counter Attack\n 5 = Call CustomPlay\n 6 = Call TimeOut\n 7 = End Program\n 8 = Menu");
+            Console.WriteLine("1 = Protect Net\n 2 = Back Check\n 3 = Charge the net\n 4 = Counter Attack\n 5 = Call CustomPlay\n 6 = Call TimeOut\n 7 = End Program\n 8 = Menu\n");
             do
             {
                 switch (Console.ReadKey().KeyChar.ToString())
@@ -50,7 +50,7 @@ namespace SportsManager
                         break;
 
                     case "8":
-                        Console.WriteLine(" Menu:   ");
+                        Console.WriteLine(" Menu:   \n");
                         usercontrols.GetUserControl();
                         return;
 

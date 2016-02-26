@@ -12,6 +12,7 @@ namespace SportsManager
         {
             UserControls uc = new UserControls();
             uc.GetUserControl();
+            
         }
         
     }

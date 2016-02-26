@@ -13,7 +13,7 @@ namespace SportsManager
 
         public void ViewPlayerRoster()
         {
-            Console.WriteLine(" Choose 1 to view the roster \n Choose 2 end program\n Choose 3 to go to Menu");
+            Console.WriteLine(" Choose 1 to view the roster \n Choose 2 end program\n Choose 3 to go to Menu\n");
 
             do
             {
@@ -29,7 +29,7 @@ namespace SportsManager
                         break;
 
                     case "3":
-                        Console.WriteLine(" Menu:   ");
+                        Console.WriteLine(" Menu:   \n");
                         usercontrols.GetUserControl();
                         return;
 

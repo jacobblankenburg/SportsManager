@@ -43,11 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Defence.cs" />
     <Compile Include="FileReader.cs" />
     <Compile Include="FileWritter.cs" />
-    <Compile Include="Forward.cs" />
-    <Compile Include="Goalie.cs" />
+    <Compile Include="GameSimulator.cs" />
     <Compile Include="LineUp.cs" />
     <Compile Include="MakeRoster.cs" />
     <Compile Include="Manager.cs" />

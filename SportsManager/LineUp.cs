@@ -15,7 +15,7 @@ namespace SportsManager
 
         public void ManagerSelectsPlayer()
         {
-            Console.WriteLine(" Choose 1 for adding players to the lineup \n Choose 2 to remove players from lineup\n Choose 3 to display your Lineup\n Choose 4 to save Lineup\n Choose 5 to display roster\n Choose 6 to end program\n Choose 7 to go to Menu");
+            Console.WriteLine(" Choose 1 for adding players to the lineup \n Choose 2 to remove players from lineup\n Choose 3 to display your Lineup\n Choose 4 to save Lineup\n Choose 5 to display roster\n Choose 6 to end program\n Choose 7 to go to Menu\n");
 
             do
             {
@@ -23,7 +23,7 @@ namespace SportsManager
                 {
 
                     case "1":
-                        Console.WriteLine(" Add:");
+                        Console.WriteLine(" Add 6 players to the line up:");
                         AddPlayers();
                         continue;
 
@@ -53,7 +53,7 @@ namespace SportsManager
                          break;
 
                     case "7":
-                        Console.WriteLine(" Menu:   ");
+                        Console.WriteLine(" Menu:   \n");
                         usercontrols.GetUserControl();
                         return;
 

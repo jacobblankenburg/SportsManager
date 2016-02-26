@@ -15,7 +15,7 @@ namespace SportsManager
 
         public void MakePlayerRoster()
         {
-            Console.WriteLine(" Choose 1 to add players to the roster \n Choose 2 to display your Roster\n Choose 3 to end program\n Choose 4 to go to Menu");
+            Console.WriteLine(" Choose 1 to add players to the roster \n Choose 2 to display your Roster\n Choose 3 to end program\n Choose 4 to go to Menu\n");
 
             do
             {
@@ -35,7 +35,7 @@ namespace SportsManager
                     case "3":
                         break;
                     case "4":
-                        Console.WriteLine(" Menu:   ");
+                        Console.WriteLine(" Menu:   \n");
                         usercontrols.GetUserControl();
                         return;
                         

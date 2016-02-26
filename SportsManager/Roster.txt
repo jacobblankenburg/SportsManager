@@ -1,4 +1,4 @@
-adam has a number of : 12. shoots from the : right side. adam is a : defence and has a rating of 92
-jake has a number of : 54. shoots from the : right side. jake is a : forward and has a rating of 87
-jake has a number of : 32. shoots from the : right side. jake is a : forward and has a rating of 93
-mike has a number of : 76. shoots from the : left side. mike is a : defence and has a rating of 93
+Miles Wessler has a number of 69, shoots from the Right side, is a god, and has a rating of 91
+jake has a number of 26, shoots from the right side, is a forward, and has a rating of 98
+mike has a number of 13, shoots from the right side, is a defence, and has a rating of 98
+adam has a number of 15, shoots from the left side, is a defence, and has a rating of 97

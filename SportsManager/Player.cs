@@ -34,7 +34,7 @@ namespace SportsManager
         }
         public override string ToString()
         {
-            return (Name + " has a number of : " + Number + ". shoots from the : " + ShotDirection + " side. " + Name + " is a : " + PlayerPosition + " and has a rating of " + Rating);
+            return (Name + " has a number of " + Number + ", shoots from the " + ShotDirection + " side, is a " + PlayerPosition + ", and has a rating of " + Rating);
         } 
     }
 }

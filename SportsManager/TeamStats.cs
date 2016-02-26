@@ -12,7 +12,7 @@ namespace SportsManager
         UserControls usercontrols = new UserControls();
         public void ViewStats()
         {
-            Console.WriteLine(" 1 = View Stats\n 2 = End Program\n 3 = Menu");
+            Console.WriteLine(" 1 = View Stats\n 2 = End Program\n 3 = Menu\n");
 
             do
             {
@@ -28,7 +28,7 @@ namespace SportsManager
                         break;
 
                     case "3":
-                        Console.WriteLine(" Menu:   ");
+                        Console.WriteLine(" Menu:   \n");
                         usercontrols.GetUserControl();
                         return;
 

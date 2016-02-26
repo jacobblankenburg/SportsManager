@@ -14,7 +14,7 @@ namespace SportsManager
 
         public void ScheduleSelect()
         {
-            Console.WriteLine(" Choose 1 to view Practice Schedule\n Choose 2 to view Weight Training Schedule\n Choose 3 to view One on One Schedule\n Choose 4 to view Game Schedule\n Choose 5 to end program\n Choose 6 to go to Menu");
+            Console.WriteLine(" Choose 1 to view Practice Schedule\n Choose 2 to view Weight Training Schedule\n Choose 3 to view One on One Schedule\n Choose 4 to view Game Schedule\n Choose 5 to end program\n Choose 6 to go to Menu\n");
 
             do
             {
@@ -45,7 +45,7 @@ namespace SportsManager
                         break;
 
                     case "6":
-                        Console.WriteLine(" Menu:   ");
+                        Console.WriteLine(" Menu:   \n");
                         usercontrols.GetUserControl();
                         return;
 

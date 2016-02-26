@@ -19,8 +19,9 @@ namespace SportsManager
             TeamStats teamstats = new TeamStats();
 
 
-
-            Console.WriteLine("Make Roster, View Roster, Edit Schedule, View Schedule, Line Up, Manager Moves, Team Stats, End\n");
+            Console.WriteLine("           -----------------------------------------------------------------------------------------------");
+            Console.WriteLine("---------- Make Roster, View Roster, Edit Schedule, View Schedule, Line Up, Manager Moves, Team Stats, End -----------");
+            Console.WriteLine("           -----------------------------------------------------------------------------------------------");
             string Userselect = Console.ReadLine();
 
             switch (Userselect)
@@ -68,6 +69,10 @@ namespace SportsManager
                 case "end":
                 case "End":
                     Console.WriteLine("---------------------------------Thank you for using TeamManager 1.0---------------------------------------------");
+                    break;
+
+                default:
+                    Console.WriteLine("Not valid input");
                     break;
 
             }

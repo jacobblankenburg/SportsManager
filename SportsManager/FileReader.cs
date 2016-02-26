@@ -17,7 +17,6 @@ namespace SportsManager
             string inPut = file.ReadToEnd();
             Console.WriteLine(inPut);
             file.Close();
-            Console.ReadLine();
             return inPut;
             
         }
