@@ -17,12 +17,14 @@ namespace SportsManager
             LineUp lineup = new LineUp();
             Manager manager = new Manager();
             TeamStats teamstats = new TeamStats();
+            GameSimulator gamesimulator = new GameSimulator();
 
 
-            Console.WriteLine("           -----------------------------------------------------------------------------------------------");
-            Console.WriteLine("---------- Make Roster, View Roster, Edit Schedule, View Schedule, Line Up, Manager Moves, Team Stats, End -----------");
-            Console.WriteLine("           -----------------------------------------------------------------------------------------------");
+            Console.WriteLine("   -----------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("--- Make Roster, View Roster, Edit Schedule, View Schedule, Line Up, Manager Moves, Team Stats, Game Simulator, End ---");
+            Console.WriteLine("   -----------------------------------------------------------------------------------------------------------------");
             string Userselect = Console.ReadLine();
+
 
             switch (Userselect)
             {
@@ -64,6 +66,12 @@ namespace SportsManager
                 case "Team Stats":
                     Console.WriteLine("Team Stats:\n");
                     teamstats.ViewStats();
+                    break;
+
+                case "game simulator":
+                case "Game Simulator":
+                    Console.WriteLine("Game Simulator:\n)");
+                    gamesimulator.SimulateGame();
                     break;
 
                 case "end":

@@ -12,6 +12,8 @@ namespace SportsManager
         {
             UserControls uc = new UserControls();
             uc.GetUserControl();
+            //GameSimulator gs = new GameSimulator();
+            //gs.SimulateGame();
             
         }
         

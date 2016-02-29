@@ -1,2 +1,3 @@
 
 jake has a number of 26, shoots from the right side, is a forward, and has a rating of 92
+mike has a number of 32, shoots from the left side, is a defence, and has a rating of 97

@@ -9,9 +9,13 @@ namespace SportsManager
 {
     public class GameSimulator
     {
+        FileWritter fw = new FileWritter();
         FileReader fr = new FileReader();
         UserControls usercontrols = new UserControls();
         Manager manager = new Manager();
+
+        int goal = 0;
+        int opponentGoal = 0;
 
         public void SimulateGame()
         {
@@ -20,9 +24,9 @@ namespace SportsManager
             for (int i = 1; i < 21; i++)
             {
                 Console.WriteLine("The Game clock is at {0} minutes\n", i);
-
+                Console.WriteLine("The Score is {0} to {1}\n", goal, opponentGoal);
                 Console.WriteLine("Please select a play\n");
-                Console.WriteLine("1 = Protect Net\n 2 = Back Check\n 3 = Charge the net\n 4 = Counter Attack\n 5 = Call CustomPlay\n 6 = Call TimeOut\n 7 = Score Goal\n 8 = Give up Goal\n 9 = New play Clock\n");
+                Console.WriteLine("1 = Protect Net\n 2 = Back Check\n 3 = Charge the net\n 4 = Counter Attack\n 5 = Call CustomPlay\n 6 = Call TimeOut\n 7 = Score Goal\n 8 = Give up Goal\n 9 = New play Clock\n 0 = Menu\n");
                 do
                 {
                     switch (Console.ReadKey().KeyChar.ToString())
@@ -65,10 +69,10 @@ namespace SportsManager
                         case "9":
                             break;
 
-                        //case "0":
-                        //    Console.WriteLine(" Menu:   \n");
-                        //    manager.CallPlay();
-                        //    return;
+                        case "0":
+                            Console.WriteLine(" Menu:   \n");
+                            usercontrols.GetUserControl();
+                            return;
 
                         default:
                             Console.WriteLine(" Not valid user input");
@@ -77,9 +81,9 @@ namespace SportsManager
 
                     break;
 
-                } while (false);
+                } while (true);
 
-                Console.WriteLine(" ->");
+                Console.WriteLine(" ->\n");
             }
         }
         public void ReadCustomPlay()
@@ -92,21 +96,13 @@ namespace SportsManager
         }
         public void ScoreGoal()
         {
-            List<int> goals = new List<int>();
-
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine(i);
-            }
+            goal++;
+            Console.WriteLine(goal);
         }
         public void ScoredOn()
         {
-            List<int> goalsAgainst = new List<int>();
-
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine(i);
-            }
+            opponentGoal++;
+            Console.WriteLine(opponentGoal);
         }
     }
 }

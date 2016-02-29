@@ -18,7 +18,6 @@ namespace SportsManager
             Console.WriteLine(inPut);
             file.Close();
             return inPut;
-            
         }
     }
 }
