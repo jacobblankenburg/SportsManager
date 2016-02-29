@@ -14,7 +14,7 @@ namespace SportsManager
 
         public void ScheduleSelect()
         {
-            Console.WriteLine(" Choose 1 to view Practice Schedule\n Choose 2 to view Weight Training Schedule\n Choose 3 to view One on One Schedule\n Choose 4 to view Game Schedule\n Choose 5 to end program\n Choose 6 to go to Menu\n");
+            Console.WriteLine(" Choose 1 to view Practice Schedule\n Choose 2 to view Weight Training Schedule\n Choose 3 to view One on One Schedule\n Choose 4 to view Game Schedule\nChoose 5 to see All\nChoose 6 to end program\n Choose 7 to go to Menu\n");
 
             do
             {
@@ -42,9 +42,14 @@ namespace SportsManager
                         continue;
 
                     case "5":
-                        break;
+                        Console.WriteLine(" All:");
+                        ViewAll();
+                        continue;
 
                     case "6":
+                        break;
+
+                    case "7":
                         Console.WriteLine(" Menu:   \n");
                         usercontrols.GetUserControl();
                         return;
@@ -78,7 +83,17 @@ namespace SportsManager
         {
             fr.ReadFromFile("../../GameSchedule.txt");
         }
-
+        public void ViewAll()
+        {
+            Console.WriteLine("Practice: ");
+            fr.ReadFromFile("../../PracticeSchedule.txt");
+            Console.WriteLine("Weight Training: ");
+            fr.ReadFromFile("../../TrainingSchedule.txt");
+            Console.WriteLine("One on One: ");
+            fr.ReadFromFile("../../OneonOneSchedule.txt");
+            Console.WriteLine("Game: ");
+            fr.ReadFromFile("../../GameSchedule.txt");
+        }
 
     }
 }
