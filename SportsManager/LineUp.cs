@@ -23,7 +23,7 @@ namespace SportsManager
                 {
 
                     case "1":
-                        Console.WriteLine(" Add 6 players to the line up:");
+                        Console.WriteLine(" Add players from your roster to the line up:");
                         AddPlayers();
                         continue;
 

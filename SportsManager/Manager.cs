@@ -39,7 +39,7 @@ namespace SportsManager
                         continue;
 
                     case "5":
-                        fr.ReadFromFile("../../CustomPlay.txt");
+                        fr.ReadFromFile( "../../CustomPlay.txt");
                         continue;
 
                     case "6":

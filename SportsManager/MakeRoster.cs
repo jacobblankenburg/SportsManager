@@ -62,7 +62,7 @@ namespace SportsManager
             this.player.Name = Console.ReadLine();
             Console.WriteLine("Enter the Players number");
             this.player.Number = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the Players Shot Direction");
+            Console.WriteLine("Enter the Players Shot Direction (Right or Left)");
             this.player.ShotDirection = Console.ReadLine();
             Console.WriteLine("Enter the Players Position");
             this.player.PlayerPosition = Console.ReadLine();
