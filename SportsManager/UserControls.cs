@@ -12,7 +12,7 @@ namespace SportsManager
         {
             MakeRoster makeroster = new MakeRoster();
             ViewRoster viewroster = new ViewRoster();
-            Schedule schedule = new Schedule();
+            EditSchedule editschedule = new EditSchedule();
             ViewSchedules viewschedule = new ViewSchedules();
             LineUp lineup = new LineUp();
             Manager manager = new Manager();
@@ -41,7 +41,7 @@ namespace SportsManager
 
                 case "edit schedule":
                 case "Edit Schedule":
-                    schedule.ScheduleforTeam();
+                    editschedule.ScheduleforTeam();
                     break;
 
                 case "view schedule":

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SportsManager
 {
-    public class Schedule
+    public class EditSchedule
     {
         UserInput ui = new UserInput();
         FileWritter fw = new FileWritter();

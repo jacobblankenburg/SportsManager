@@ -22,27 +22,27 @@ namespace SportsManager
                 {
 
                     case "1":
-                        Console.WriteLine(" Practice:");
+                        Console.WriteLine(" Practice:\n");
                         ViewPractice();
                         continue;
 
                     case "2":
-                        Console.WriteLine(" Weight Training:");
+                        Console.WriteLine(" Weight Training:\n");
                         ViewTraining();
                         continue;
 
                     case "3":
-                        Console.WriteLine(" One on One:");
+                        Console.WriteLine(" One on One:\n");
                         ViewOneonOne();
                         continue;
 
                     case "4":
-                        Console.WriteLine(" Game:");
+                        Console.WriteLine(" Game:\n");
                         ViewGame();
                         continue;
 
                     case "5":
-                        Console.WriteLine(" All:");
+                        Console.WriteLine(" All:\n");
                         ViewAll();
                         continue;
 
