@@ -85,6 +85,8 @@ namespace SportsManager
 
                 Console.WriteLine(" ->\n");
             }
+            Console.WriteLine("Menu: ");
+            usercontrols.GetUserControl();
         }
         public void ReadCustomPlay()
         {
