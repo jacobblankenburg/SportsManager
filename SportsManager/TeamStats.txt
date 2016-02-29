@@ -1,3 +1,8 @@
 	Wins - 26
 	Loses - 13
-	ties - 2
+	Ties - 2
+	OTW - 6
+	OTL - 2
+
+		OTW = OverTime Wins
+		OTl = OverTime Loses
